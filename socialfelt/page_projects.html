@@ -1,13 +1,213 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Projects - SocialFelt</title>
-		<link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="css/base.css">
-		<link rel="stylesheet" href="css/page.projects.css">
-	</head>
-	<body>
-		<h1>Projects</h1>
-	</body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home / About - SocialFelt</title>
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/page.projects.css">
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('.card').each(function(){
+				var $card = $(this);
+				$('[data-open-card]',$card).click(function(){
+					if ($card.hasClass('open')) {
+						$card.removeClass('open');
+					} else {
+						$('.card.open').removeClass('open');
+						$card.addClass('open');
+					}
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body class="page-projects">
+
+	<header class="header">
+		<h1><a href="index.html" class="logo">SocialFelt</a></h1>
+	</header>
+
+	<nav class="menu">
+		<ul class="mainmenu">
+			<li><a href="index.html">About SocialFelt</a>
+				<ul class="submenu">
+					<li><a href="#">Aims &amp; Objectives</a></li>
+					<li><a href="#">Beginnings</a></li>
+					<li><a href="#">Trustees</a></li>
+					<li><a href="#">Research</a></li>
+				</ul>
+			</li>
+			<li><a href="page_projects.html" class="active">Support our projects</a></li>
+			<li><a href="page_resources.html">Resources</a></li>
+			<li><a href="page_services.html">Services</a></li>
+			<li><a href="page_contact.html">Contact us</a></li>
+		</ul>
+		<ul class="links">
+			<li class="shop"><a href="#">Shop</a></li>
+			<li class="blog"><a href="#">Blog</a></li>
+		</ul>
+	</nav>
+
+	<section class="container">
+		<article class="container_item">
+			<h1>Support our projects</h1>
+			<p>SocialFelt provides its services in partnership with other organizations. Due to the nature of the therapy and the cost of using different wool and silk supplies for felting, we need your support to bring these projects alive and help traumatized adolescents and women to recover from trauma.<br>
+			By donating through this page, your donation will go to the project you want to support, covering the supplies, the transportation and the labour costs of the therapist. You can find out more about the costs visiting our Services  page.</p>
+
+		<div class="support_text">
+			<h2>Support via bank transfer</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+			<p2>
+		</div>
+
+		</article>
+
+		<article class="container_item">
+			<h1 class="card_h1">Current projects</h1>
+
+
+			<div class="card">
+
+				<div class="card_header cf">
+
+					<h2>ECPAT project to lorem ipsum</h2>
+					<span class="arrow" data-open-card><a>&nbsp;</a></span>
+
+				</div>
+
+				<figure class="picture_big">
+					<img alt="SofialFelt project" src="images/project_picture.jpg">
+				</figure>
+
+				<div class="description cf">
+					<p class="less_txt">SocialFelt provides its services in partnership the therapy and the cost of using different wool and silk supplies for fe projects alive and help traumatized adolescents lting, we need need your support to bring these... <b><a data-open-card>Learn more</a></b/></p>
+					<p class="more_txt">More text. SocialFelt provides its services in partnership the therapy and the cost of using different wool and silk supplies for fe projects alive and help traumatized adolescents lting, we need need your support to bring these. SocialFelt provides its services in partnership the therapy and the cost of using different wool and silk supplies for fe projects alive and help traumatized adolescents lting, we need need your support to bring these... <b><a data-open-card>Show less</a></b/></p>
+
+					<figure class="picture_small">
+						<img alt="SofialFelt project" src="images/project_small.png" alt="Socialfelt project" />
+					</figure>
+
+				</div>
+
+				<div class="donation cf">
+					<div class="donations">
+						<span class="label">Donations</span>
+						<span class="amount">£3.058</span>
+					</div>
+
+					<div class="goal">
+						<span class="label">Goal</span>
+						<span class="amount">£10.000</span>
+					</div>
+
+					<div class="donate_button">
+						<button type="submit" name="Donate" class="btn"></button>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="card">
+
+				<div class="card_header cf">
+
+					<h2>ECPAT project to lorem ipsum</h2>
+					<span class="arrow" data-open-card><a>&nbsp;</a></span>
+
+				</div>
+
+				<figure class="picture_big">
+					<img alt="SofialFelt project" src="images/project_picture.jpg">
+				</figure>
+
+				<div class="description cf">
+					<p class="less_txt">SocialFelt provides its services in partnership the therapy and the cost of using different wool and silk supplies for fe projects alive and help traumatized adolescents lting, we need need your support to bring these... <b><a data-open-card>Learn more</a></b/></p>
+					<p class="more_txt">More text. SocialFelt provides its services in partnership the therapy and the cost of using different wool and silk supplies for fe projects alive and help traumatized adolescents lting, we need need your support to bring these. SocialFelt provides its services in partnership the therapy and the cost of using different wool and silk supplies for fe projects alive and help traumatized adolescents lting, we need need your support to bring these... <b><a data-open-card>Show less</a></b/></p>
+
+					<figure class="picture_small">
+						<img alt="SofialFelt project" src="images/project_small.png" alt="Socialfelt project" />
+					</figure>
+
+				</div>
+
+				<div class="donation cf">
+					<div class="donations">
+						<span class="label">Donations</span>
+						<span class="amount">£3.058</span>
+					</div>
+
+					<div class="goal">
+						<span class="label">Goal</span>
+						<span class="amount">£10.000</span>
+					</div>
+
+					<div class="donate_button">
+						<button type="submit" name="Donate" class="btn"></button>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="card">
+
+				<div class="card_header cf">
+
+					<h2>ECPAT project to lorem ipsum</h2>
+					<span class="arrow" data-open-card><a>&nbsp;</a></span>
+
+				</div>
+
+				<figure class="picture_big">
+					<img alt="SofialFelt project" src="images/project_picture.jpg">
+				</figure>
+
+				<div class="description cf">
+					<p class="less_txt">SocialFelt provides its services in partnership the therapy and the cost of using different wool and silk supplies for fe projects alive and help traumatized adolescents lting, we need need your support to bring these... <b><a data-open-card>Learn more</a></b/></p>
+					<p class="more_txt">More text. SocialFelt provides its services in partnership the therapy and the cost of using different wool and silk supplies for fe projects alive and help traumatized adolescents lting, we need need your support to bring these. SocialFelt provides its services in partnership the therapy and the cost of using different wool and silk supplies for fe projects alive and help traumatized adolescents lting, we need need your support to bring these... <b><a data-open-card>Show less</a></b/></p>
+
+					<figure class="picture_small">
+						<img alt="SofialFelt project" src="images/project_small.png" alt="Socialfelt project" />
+					</figure>
+
+				</div>
+
+				<div class="donation cf">
+					<div class="donations">
+						<span class="label">Donations</span>
+						<span class="amount">£3.058</span>
+					</div>
+
+					<div class="goal">
+						<span class="label">Goal</span>
+						<span class="amount">£10.000</span>
+					</div>
+
+					<div class="donate_button">
+						<button type="submit" name="Donate" class="btn"></button>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+		</article>
+
+	</section>
+
+
+</body>
 </html>

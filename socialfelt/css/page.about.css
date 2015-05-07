@@ -1,1 +1,203 @@
 /* page.about css */
+
+
+/*CONTENT*/
+
+ h3 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+}
+
+.buttons {
+  margin: 30px 0px 50px 0px;
+  text-align: -webkit-center;
+}
+
+.container .buttons a {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 8px 7px 8px;
+  float: left;
+}
+
+.container .buttons a:hover {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  background-color: #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 8px 7px 8px;
+  color: #f8f8f8;
+  float: left;
+}
+
+.pics {
+  margin: 40px 0px 40px 0px;
+}
+
+.container p {
+  line-height: 1.5;
+}
+
+.container img {
+  float: right;
+  border: 2px solid #D96441;
+  border-radius: 5px;
+  margin: 0 0 0 20px;
+  width: 200px;
+}
+
+.container a {
+  color: #D96441;
+}
+
+.container a:hover {
+  color: #f8f8f8;
+}
+
+.container .CV a:visited {
+  color: #403836;
+}
+
+.pics img {
+  float:left;
+  width: 150px;
+  border: none;
+  display: block;
+  height: 150px;
+}
+
+.motto {
+  font-style: italic;
+  margin-top: 40px;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.cta a {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 9px 7px 9px;
+}
+
+.cta a:hover {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  background-color: #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 9px 7px 9px;
+  color: #f8f8f8;
+}
+
+figure {
+  margin: 0px;
+}
+
+
+
+
+/* small screen, "mobile" */
+@media all and (max-width: 767px) {
+.menu,
+.logo {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 200px;
+}
+
+.container_item {
+  width: 100%;
+  padding: 40px;
+  background-color: #C9C8C4;
+}
+
+.card {
+  width: 100%;
+}
+
+.pics img {
+  float: none;
+}
+
+.container .pics .mobile img {
+  margin: auto;
+}
+
+.container .pics .desktop img {
+  display: none;
+}
+}
+
+
+
+
+/* ipad portrait and up */
+@media all and (min-width: 768px) and (max-width: 859px) {
+.pics img {
+  float: none;
+}
+
+.container .pics .mobile img {
+  margin: auto;
+}
+
+.container .pics .desktop img {
+  display: none;
+}
+
+.desktop figure {
+  display: none;
+}
+
+.pics {
+  margin: 0px;
+}
+
+figure {
+  margin: 0px;
+}
+
+
+
+
+
+
+  .header {
+		left: 50px;
+	}
+
+	.menu {
+		font-size: 16px;
+		left: 30px;
+		width: 180px;
+	}
+
+	.container {
+		left: 110px;
+		width: 500px;
+	}
+
+	.container_item {
+		padding: 30px 25px;
+	}
+}
