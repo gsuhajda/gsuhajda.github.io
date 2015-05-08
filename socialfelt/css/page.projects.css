@@ -1,14 +1,23 @@
 /* page.projects css */
-.page-projects{
-  background: url('../images/back_projects.jpg') no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+
+body.page-projects > .bg {
+  background-image: url('../images/back_projects.jpg');
+}
+
+@media all and (max-width: 400px) {
+  body.page-projects .charity_logo{
+    background-image: url('../images/back_projects.jpg');
+  }
 }
 
 .support_text{
   background-color: rgba(255, 255, 255, .75);
   margin: 30px 0 10px 0;
   padding: 20px 25px 10px 25px;
+}
+
+.container_item{
+  min-height: 300px;
 }
 
 .card{
@@ -25,7 +34,6 @@
 }
 
 .card h2{
-
   box-sizing: border-box;
   color: white;
   font-family: 'Noto Sans', sans-serif;
@@ -45,7 +53,6 @@
   width: 34px;
 }
 
-
 .card .arrow:hover{
   background: url("../images/arrow.png") 0 -34px no-repeat;
 }
@@ -64,7 +71,6 @@
   background: url("../images/arrow.png") 0 -68px no-repeat;
 }
 
-
 .card p{
   box-sizing: border-box;
   font-size: 14px;
@@ -77,6 +83,7 @@
 .card .picture_small{
   float: right;
   padding: 25px 40px 0 0;
+  margin-bottom: 20px;
 }
 
 .card .donation{
@@ -106,7 +113,6 @@
 
 .donation .donate_button .btn{
   background: url("../images/pp_btn.png") 0 0 no-repeat;
-  background-color: #F4F4F4;
   cursor: pointer;
   border:none;
   height: 60px;
@@ -148,10 +154,8 @@
   text-transform: uppercase;
 }
 
-.card.open .picture_big{
-  height: 200px;
-  padding: 0;
-  width: 520px;
+.card.open .picture_big img{
+  width: 100%;
 }
 
 .card.open .picture_small{
@@ -172,6 +176,10 @@
 
 .picture_small{
   display:block;
+}
+
+.picture_small img{
+  border-radius: 95px;
 }
 
 .open .description p{
@@ -208,13 +216,17 @@
 }
 
 /* small screen, "mobile" */
-@media all and (max-width: 767px) {
-  .menu,
-  .logo{
-    display: none;
+@media (max-width: 859px) and (min-width: 768px){
+  .card{
+    width: 100%;
   }
 
-  .card{
+  .card p{
+    width: 65%;
+  }
+
+  .open .description p,
+  .open .picture_big{
     width: 100%;
   }
 
@@ -227,9 +239,43 @@
   .donation .donate_button .btn{
     margin: 0 auto;
     display: block;
-    }
+    padding: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    background-color: none;
+  }
 
+}
 
+@media all and (max-width: 767px) {
+  .menu,
+  .logo{
+    display: none;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  .card .less_txt{
+    width: 70%;
+  }
+
+  .donation .donations,
+  .donation .goal,
+  .donation .donate_button{
+    width: 33%;
+  }
+
+  .donation .donate_button .btn{
+    margin: 0 auto;
+    display: block;
+  }
+
+  .open .description .more_txt{
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -282,35 +328,35 @@
   }
 }
 
-  @media all and (max-width: 600px) {
-    .card .card_header h2{
-      margin-top: 10px;
-      width: 100%;
-    }
+@media all and (max-width: 600px) {
+  .card .card_header h2{
+    margin-top: 10px;
+    width: 100%;
+  }
 
-    .card .card_header{
-      position: relative;
-    }
+  .card .card_header{
+    position: relative;
+  }
 
-    .card .card_header .arrow{
-      position: relative;
-      bottom: 10px;
-      margin: 0 auto;
-      display: table;
-      width: 34px;
-      float: none;
-    }
+  .card .card_header .arrow{
+    position: relative;
+    bottom: 10px;
+    margin: 0 auto;
+    display: table;
+    width: 34px;
+    float: none;
+  }
 
-    .donation .donations .label,
-    .donation .goal .label{
-      font-size: 10px;
-      padding-top: 5px;
-    }
+  .donation .donations .label,
+  .donation .goal .label{
+    font-size: 10px;
+    padding-top: 5px;
+  }
 
-    .donation .donations .amount,
-    .donation .goal .amount{
-      font-size: 20px;
-    }
+  .donation .donations .amount,
+  .donation .goal .amount{
+    font-size: 20px;
+  }
 
 }
 
@@ -325,10 +371,9 @@
   .container .container_item:last-child{
     padding:20px 0px;
   }
-  
+
   .container .container_item .card_h1{
     margin-left: 20px;
   }
-
 
 }

@@ -20,9 +20,9 @@
 			<ul class="mainmenu">
 				<li><a href="index.html">About SocialFelt</a>
 					<ul class="submenu">
-						<li><a href="#">Aims &amp; Objectives</a></li>
-						<li><a href="#">Beginnings</a></li>
-						<li><a href="#">Trustees</a></li>
+						<li><a href="page_about_aims.html">Aims &amp; Objectives</a></li>
+						<li><a href="page_about_beginnings.html">Beginnings</a></li>
+						<li><a href="page_about_whatisfelt.html">What is felt?</a></li>
 						<li><a href="#">Research</a></li>
 					</ul>
 				</li>
@@ -35,6 +35,11 @@
 				<li class="shop"><a href="#">Shop</a></li>
 				<li class="blog"><a href="#">Blog</a></li>
 			</ul>
+			<ul class="social cf">
+				<li class="f"><a target="blank" href="https://www.facebook.com/SocialFelt">Facebook</a></li>
+				<li class="t"><a target="blank" href="https://twitter.com/SocialFelt">Twitter</a></li>
+				<li class="p"><a target="blank"  href="https://www.pinterest.com/socialfelt/">Pinterest</a></li>
+			</ul>
 		</nav>
 
 		<section class="container">
@@ -42,38 +47,42 @@
 			<article class="container_item">
 				<h1>Contact us</h1>
 
-				<h2>Should you have any questions please write a short message below.</h2>
+				<h2>Should you have any questions, please write a short message below.</h2>
 
 				<small><span>*</span> Required</small>
 
 				<form method="post" enctype="multipart/form-data">
 					<div>
-					<label for="name-inp">Your name:</label>
-					<input type="text" id="name-inp" name="name" placeholder="Example Name">
+						<label for="name-inp">Your name:</label>
+						<input type="text" id="name-inp" name="name" placeholder="Example Name">
+					</div>
 
-					<label for="email-inp">Your e-mail: <span>*</span></label>
-					<input type="text" id="email-inp" name="email" placeholder="name@example.com" required>
+					<div>
+						<label for="email-inp">Your e-mail: <span>*</span></label>
+						<input type="text" id="email-inp" name="email" placeholder="name@example.com" required>
+					</div>
 
-					<label for="subject-inp">Subject:</label>
-					<select id="subject-inp" name="subject">
-						<option disabled selected>Choose a subject!</option>
-						<option value="1">Subject 1</option>
-						<option value="2">Subject 2</option>
-						<option value="3">Subject 3</option>
-						<option value="4">Subject 4</option>
-						<option value="5">Subject 5</option>
-						<option value="6">Subject 6</option>
-						<option value="7">Other</option>
-					</select>
+					<div>
+						<label for="subject-inp">Subject:</label>
+						<input type="text" id="subject-inp" name="subject" placeholder="What it is about?">
+					</div>
 
-					<label for="message-inp">Your message: <span>*</span></label>
-					<textarea id="message-inp" name="message" placeholder="Write here your message..." required></textarea>
+					<div>
+						<label for="message-inp">Your message: <span>*</span></label>
+						<textarea id="message-inp" name="message" placeholder="Write here your message..." required></textarea>
+					</div>
 
-					<input type="submit" value="Send message" name="send">
+					<div>
+						<input type="submit" value="Send message" name="send">
 					</div>
 				</form>
 			</article>
 			<!-- /content -->
+
+			<footer class="charity_logo">
+				<a href="http://hashtagcharity.org/">Enabled by Hashtagcharity</a>
+			</footer>
+
 		</section>
 
 	</body>
