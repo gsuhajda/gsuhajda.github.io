@@ -249,10 +249,6 @@ body.page-projects > .bg {
 }
 
 @media all and (max-width: 767px) {
-  .menu,
-  .logo{
-    display: none;
-  }
 
   .card{
     width: 100%;
