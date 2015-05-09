@@ -384,9 +384,12 @@ figure,
 		width: 200px;
 	}
 
+	.logo:hover {
+		background-position: 0 0;
+	}
+
 	.toggle {
 		display: block;
-
 	}
 
 	.container{
