@@ -1,5 +1,24 @@
 /* page.contact css */
 
+body.page-contact > .bg {
+  background-image: url('../images/back_contact.jpg');
+}
+
+@media all and (max-width: 400px) {
+  body.page-contact .charity_logo{
+    background-image: url('../images/back_contact.jpg');
+  }
+}
+
+.container_item {
+	display: none;
+}
+
+.container.show-success .container_item.success,
+.container.show-form .container_item.form{
+	display: block;
+}
+
 small span,
 label span {
 	color: #dc5656;
@@ -7,9 +26,6 @@ label span {
 
 form > div {
 	margin-top: 20px;
-}
-
-form {
 	position: relative;
 }
 
@@ -60,8 +76,8 @@ textarea:focus {
 }
 
 input[type='submit'] {
-	background: white;
-	color: #dc5656;
+	background: #D96441;
+	color: #fff;
 	width: 250px;
 	height: 50px;
 	margin: auto;
@@ -74,11 +90,11 @@ input[type='submit'] {
 input[type='submit']:hover {
 	text-decoration: none;
 	border: 1px solid #D96441;
-	background-color: #D96441;
+	background-color: #fff;
 	border-radius: 5px;
 	text-align: center;
 	padding: 7px 9px 7px 9px;
-	color: #f8f8f8;
+	color: #D96441;
 }
 
 /* SENT page*/
@@ -90,7 +106,7 @@ input[type='submit']:hover {
 .new-button a {
   text-decoration: none;
   border: 1px solid #D96441;
-  background-color: white;
+  background-color: transparent;
   border-radius: 5px;
   text-align: center;
   padding: 7px 8px 7px 8px;
@@ -102,30 +118,39 @@ input[type='submit']:hover {
  	color: #f8f8f8;
 }
 
+.success {
+	text-align: center;
+	padding-top: 60px;
+}
+
 /* ERROR page*/
 
-.error-email,
 .error-message {
 	position: absolute;
+	display: none;
+	top: 0; 
 	right: 0;
 	color: #ed1c24;
 	font-weight: 700;
 }
 
+.error .error-message {
+	display: block;
+}
 
-.message input[type='text']:focus,
-.email input[type='email']:focus {
+.error textarea,
+.error input[type='email'] {
     border-color: #ed1c24;
-	outline: 0;
+    border-width: 2px;
+    outline: 0;
+    top: 0px;
+    left: -1px;
+    position: relative;
 } 
 
 /* small screen, "mobile" */
 @media all and (max-width: 767px) {
-	.menu,
-	.logo {
-		display: none;
-	}
-
+	
 	input[type='submit'] {
 		width: 210px;
 		margin: auto;
@@ -137,8 +162,6 @@ input[type='submit']:hover {
 	}
 
 	/* ERROR page*/
-
-	.error-email,
 	.error-message {
 		position: static;
 		margin-top: 0;

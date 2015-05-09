@@ -1,5 +1,46 @@
 /* page.about css */
 
+body.page-main > .bg {
+  background-image: url('../images/back_main.jpg');
+}
+
+body.page-about-aims > .bg {
+  background-image: url('../images/aims_bg.jpg');
+}
+
+body.page-about-beginnings > .bg {
+  background-image: url('../images/beginnings_bg.jpg');
+}
+
+body.page-about-felttherapy > .bg {
+  background-image: url('../images/back_felttherapy.jpg');
+}
+
+body.page-about-whatisfelt > .bg {
+  background-image: url('../images/whatisfelt_bg.jpg');
+}
+
+@media all and (max-width: 400px) {
+  body.page-main .charity_logo{
+    background-image: url('../images/back_main.jpg');
+  }
+
+  body.page-about-aims .charity_logo{
+    background-image: url('../images/back_about_aims.jpg');
+  }
+
+  body.page-about-beginnings .charity_logo{
+    background-image: url('../images/beginnings_bg.jpg');
+  }
+
+  body.page-about-felttherapy .charity_logo{
+    background-image: url('../images/back_felttherapy.jpg');
+  }
+
+  body.page-about-whatisfelt .charity_logo{
+    background-image: url('../images/whatisfelt_bg.jpg');
+  }
+}
 
 /*CONTENT*/
 
@@ -111,11 +152,6 @@
 
 /* small screen, "mobile" */
 @media all and (max-width: 767px) {
-  .menu,
-  .logo {
-    display: none;
-  }
-
   .card {
     width: 100%;
   }
@@ -142,14 +178,13 @@
     margin: auto;
     display: block;
     width: 260px;
-
   }
 
   .container .buttons a {
     text-decoration: none;
     border: 1px solid #D96441;
     border-radius: 5px;
-    margin: 20px;
+    margin: 20px 0px 20px 0px;
     text-align: center;
     padding: 7px 8px 7px 8px;
     float: none;
@@ -162,7 +197,7 @@
     border: 1px solid #D96441;
     background-color: #D96441;
     border-radius: 5px;
-    margin: 20px;
+    margin: 20px 0px 20px 0px;
     text-align: center;
     padding: 7px 8px 7px 8px;
     color: #f8f8f8;
@@ -173,6 +208,10 @@
 
   .buttons {
     margin: 0px;
+  }
+
+  .motto {
+  	margin: 30px;
   }
 
 }
