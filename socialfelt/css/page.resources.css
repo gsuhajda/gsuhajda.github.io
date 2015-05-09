@@ -1,12 +1,12 @@
 /* page.resources css */
 
 body.page-resources > .bg {
-	background-image: url('../images/back_resources.jpg');
+	background-image: url('../images/back_resources_.jpg');
 }
 
 @media all and (max-width: 400px) {
   body.page-resources .charity_logo{
-    background-image: url('../images/back_resources.jpg');
+    background-image: url('../images/back_resources_.jpg');
   }
 }
 

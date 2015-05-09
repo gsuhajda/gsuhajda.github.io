@@ -1,12 +1,12 @@
 /* page.services css */
 
 body.page-services > .bg {
-  background-image: url('../images/back_services.jpg');
+  background-image: url('../images/back_services_.jpg');
 }
 
 @media all and (max-width: 400px) {
   body.page-services .charity_logo{
-    background-image: url('../images/back_services.jpg');
+    background-image: url('../images/back_services_.jpg');
   }
 }
 
