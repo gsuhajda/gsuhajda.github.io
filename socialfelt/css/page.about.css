@@ -1,44 +1,44 @@
 /* page.about css */
 
 body.page-main > .bg {
-  background-image: url('../images/back_main.jpg');
+  background-image: url('../images/bg_main.jpg');
 }
 
 body.page-about-aims > .bg {
-  background-image: url('../images/aims_bg.jpg');
+  background-image: url('../images/bg_aims.jpg');
 }
 
 body.page-about-beginnings > .bg {
-  background-image: url('../images/beginnings_bg.jpg');
+  background-image: url('../images/bg_beginnings.jpg');
 }
 
 body.page-about-felttherapy > .bg {
-  background-image: url('../images/back_felttherapy.jpg');
+  background-image: url('../images/bg_felttherapy.jpg');
 }
 
 body.page-about-whatisfelt > .bg {
-  background-image: url('../images/whatisfelt_bg.jpg');
+  background-image: url('../images/bg_whatisfelt.jpg');
 }
 
 @media all and (max-width: 400px) {
   body.page-main .charity_logo{
-    background-image: url('../images/back_main.jpg');
+    background-image: url('../images/bg_main.jpg');
   }
 
   body.page-about-aims .charity_logo{
-    background-image: url('../images/aims_bg.jpg');
+    background-image: url('../images/bg_aims.jpg');
   }
 
   body.page-about-beginnings .charity_logo{
-    background-image: url('../images/beginnings_bg.jpg');
+    background-image: url('../images/bg_beginnings.jpg');
   }
 
   body.page-about-felttherapy .charity_logo{
-    background-image: url('../images/back_felttherapy.jpg');
+    background-image: url('../images/bg_felttherapy.jpg');
   }
 
   body.page-about-whatisfelt .charity_logo{
-    background-image: url('../images/whatisfelt_bg.jpg');
+    background-image: url('../images/bg_whatisfelt.jpg');
   }
 }
 

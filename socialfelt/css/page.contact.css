@@ -1,12 +1,12 @@
 /* page.contact css */
 
 body.page-contact > .bg {
-  background-image: url('../images/back_contact_.jpg');
+  background-image: url('../images/bg_contact.jpg');
 }
 
 @media all and (max-width: 400px) {
   body.page-contact .charity_logo{
-    background-image: url('../images/back_contact_.jpg');
+    background-image: url('../images/bg_contact.jpg');
   }
 }
 
