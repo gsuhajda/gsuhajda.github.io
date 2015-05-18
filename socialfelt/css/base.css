@@ -26,34 +26,22 @@ body.page_main > .bg {
 
 /* TOOLS */
 
-/**
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    contenteditable attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that are clearfixed.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
 .cf:before,
 .cf:after {
-	content: " "; /* 1 */
-	display: table; /* 2 */
+	content: " ";
+	display: table;
 }
 
 .cf:after {
 	clear: both;
 }
 
-/**
-* For IE 6/7 only
-* Include this rule to trigger hasLayout and contain floats.
-*/
 .cf {
 	*zoom: 1;
 }
 
 /* override normalize */
+
 figure,
 .header h1 {
 	margin: 0;
@@ -378,7 +366,7 @@ figure,
 	}
 
 	.logo{
-		background: url('../images/SF_logo_mobile.png') 0 0 no-repeat;
+		background: url('../images/socialfelt_logo_mobile.png') 0 0 no-repeat;
 		background-size: 200px 66px;
 		height: 66px;
 		width: 200px;
@@ -541,7 +529,7 @@ figure,
 	}
 
 	#nav:target .logo{
-		background: url('../images/SF_logo_mobile_2.png') 0 0 no-repeat;
+		background: url('../images/socialfelt_logo_mobile_transparent.png') 0 0 no-repeat;
 		background-size: 200px 66px;
 		height: 66px;
 		width: 200px;
