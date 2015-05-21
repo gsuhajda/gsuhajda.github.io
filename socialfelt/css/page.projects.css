@@ -45,6 +45,7 @@ body.page-projects > .bg {
 
 .card .arrow{
   background: url("../images/arrow.png") 0 0 no-repeat;
+  background-size: 34px 132px;
   cursor: pointer;
   display: block;
   height: 34px;
@@ -55,10 +56,12 @@ body.page-projects > .bg {
 
 .card .arrow:hover{
   background: url("../images/arrow.png") 0 -34px no-repeat;
+  background-size: 34px 132px;
 }
 
 .card.open .arrow{
   background: url("../images/arrow.png") 0 -102px no-repeat;
+  background-size: 34px 132px;
   cursor: pointer;
   display: block;
   float: right;
@@ -69,6 +72,7 @@ body.page-projects > .bg {
 
 .card.open .arrow:hover{
   background: url("../images/arrow.png") 0 -68px no-repeat;
+  background-size: 34px 132px;
 }
 
 .card p{
@@ -113,6 +117,7 @@ body.page-projects > .bg {
 
 .donation .donate_button .btn{
   background: url("../images/pp_btn.png") 0 0 no-repeat;
+  background-size: 340px 60px;
   cursor: pointer;
   border:none;
   height: 60px;
