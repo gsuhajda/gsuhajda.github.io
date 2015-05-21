@@ -120,7 +120,7 @@ body.page-projects > .bg {
 }
 
 .donation .donate_button .btn:hover{
-  background-position: -170 0;
+  background-position: -170px 0;
 }
 
 .donation .donate_button .btn:focus{
