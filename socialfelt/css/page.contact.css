@@ -97,6 +97,10 @@ input[type='submit']:hover {
 	color: #D96441;
 }
 
+input[type='submit']:focus {
+	outline: 0;
+}
+
 /* SENT page*/
 
 .new-button {
