@@ -183,49 +183,36 @@ figure,
 .menu .social li{
   display: block;
   float: left;
-  text-indent: 110%;
-  white-space: nowrap;
-  overflow: hidden;
   width: 32px;
   height: 32px;
   margin-top: 0;
   margin-right: 30px;
 }
 
-.menu .social .f{
-  background: url("../images/icon_f.png") 0 0 no-repeat;
-  background-size: 32px 32px;
+.menu .social li:last-child{
+	margin-right: 0;
 }
 
-.menu .social .t{
-  background: url("../images/icon_t.png") 0 0 no-repeat;
-  background-size: 32px 32px;
+.menu .social li a{
+	display: block;
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	margin: 0;
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url("../images/icons_social.png") 0 0 no-repeat;
+	background-size: 96px 64px;
 }
+.menu .social li a:hover{ background-color: transparent; }
 
-.menu .social .p{
-  margin-right: 0;
-  background: url("../images/icon_p.png") 0 0 no-repeat;
-  background-size: 32px 32px;
-}
-
-.menu .social .f:hover{
-  background: url("../images/icon_f_hover.png") 0 0 no-repeat;
-  background-size: 32px 32px;
-}
-
-.menu .social .t:hover{
-  background: url("../images/icon_t_hover.png") 0 0 no-repeat;
-  background-size: 32px 32px;
-}
-
-.menu .social .p:hover{
-  background: url("../images/icon_p_hover.png") 0 0 no-repeat;
-  background-size: 32px 32px;
-}
-
-.menu .social a:hover{
-  background-color: rgba(255, 255, 255, .0);
-}
+.menu .social .f a{ background-position: 0 0; }
+.menu .social .t a{ background-position: -32px 0; }
+.menu .social .p a{ background-position: -64px 0; }
+.menu .social .f a:hover{ background-position: 0 -32px; }
+.menu .social .t a:hover{ background-position: -32px -32px; }
+.menu .social .p a:hover{ background-position: -64px -32px; }
 
 .toggle,
 .close{
