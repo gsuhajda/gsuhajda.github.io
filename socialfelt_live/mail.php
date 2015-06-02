@@ -96,15 +96,15 @@
 				returnJSON($re);
 			}
 
-			if (empty(trim($_POST['message'])) || (!empty(trim($_POST['message'])) && strlen(trim($_POST['message']))<10)) {
+			if (empty($_POST['message']) || (!empty($_POST['message']) && strlen($_POST['message'])<10)) {
 				$re = array('success' => false, 'error' => 'message', 'msg' => 'Please write a longer message!');
 				returnJSON($re);
 			}
 
-			$email = trim($_POST['email']);
+			$email = $_POST['email'];
 			list($guessname,$guessdomain) = explode('@', $email);
-			$name = !empty(trim($_POST['name'])) ? trim($_POST['name']) : $guessname;
-			$subject = !empty(trim($_POST['subject'])) ?  trim($_POST['subject']) : $_config['email']['subject'] . ' - ' . $guessname;
+			$name = !empty($_POST['name']) ? $_POST['name'] : $guessname;
+			$subject = !empty($_POST['subject']) ?  $_POST['subject'] : $_config['email']['subject'] . ' - ' . $guessname;
 
 			$mail_tpl = 'message';
 			$mail_data = array(
