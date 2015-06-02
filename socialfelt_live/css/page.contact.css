@@ -29,6 +29,10 @@ form > div {
 	position: relative;
 }
 
+form > div.email-confirm {
+	display: none;
+}
+
 input,
 textarea {
 	width: 520px;
